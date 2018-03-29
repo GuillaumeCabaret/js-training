@@ -8,6 +8,11 @@
  */
 
 // Your code :
+const circular = {};
+
+Object.defineProperty(circular, 'circular', {
+    value: circular,
+  });
 
 //* Begin of tests
 const assert = require('assert')
