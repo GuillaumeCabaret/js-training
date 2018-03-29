@@ -6,6 +6,11 @@
  *
  */
 
+// Your code :
+function total (x){
+    const reducer = (accumulator, currentValue) => accumulator + currentValue
+    return x.reduce(reducer);
+}
 
 //* Begin of tests
 const assert = require('assert')
