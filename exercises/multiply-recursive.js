@@ -16,7 +16,7 @@ function multiply(num1, num2, result = 0) {
     }
 
     if (num2 > 0) {
-        result += x;
+        result += num1;
         return multiply(num1, num2 - 1, result);
     } else if (num1 > 0) {
         result += num2;
