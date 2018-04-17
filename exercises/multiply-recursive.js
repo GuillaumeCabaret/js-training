@@ -10,7 +10,24 @@
  */
 
 // Your code :
+function multiply(num1, num2, result = 0) {
+    if (num2 == 0 || num1 == 0) {
+        return result;
+    }
 
+    if (num2 > 0) {
+        result += x;
+        return multiply(num1, num2 - 1, result);
+    } else if (num1 > 0) {
+        result += num2;
+        return multiply(num1 - 1, num2, result);
+    } else {
+        x = Math.abs(num1);
+        y = Math.abs(num2);
+        result += num2;
+        return multiply(num1 - 1, num2, result);
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
