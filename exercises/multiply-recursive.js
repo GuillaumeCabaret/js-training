@@ -22,8 +22,8 @@ function multiply(num1, num2, result = 0) {
         result += num2;
         return multiply(num1 - 1, num2, result);
     } else {
-        x = Math.abs(num1);
-        y = Math.abs(num2);
+        num1 = Math.abs(num1);
+        num2 = Math.abs(num2);
         result += num2;
         return multiply(num1 - 1, num2, result);
     }
